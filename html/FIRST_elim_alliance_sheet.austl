@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ftcpenn.css">
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card border-thicc">
+    <div class="card-body">
+      <h2 class="text-center">Semifinal 1</h2>
+      <div class="row">
+        <div class="card card-body col-md-5 border-thicc">
+          <div class="card row border-thicc">
+          	<div class="col-md-12 text-center">(Red) Alliance 1</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 text-center">Captain</div>
+            <div class="col-md-4 text-center">First Pick</div>
+            <div class="col-md-4 text-center">Second Pick</div>
+          </div>
+
+          <div class="row">
+            <div class="card col-md-4 text-center border-thicc">#{SF_1_Red_1}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_1_Red_2}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_1_Red_3}</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+          </div>
+        </div>
+
+    	<div class="card align-self-end col-md-2 border-thicc">
+          <div class="row align-self-center">
+          	Scores
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="card card-body col-md-5 border-thicc">
+          <div class="card row border-thicc">
+          	<div class="col-md-12 text-center">(Blue) Alliance 4</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 text-center">Captain</div>
+            <div class="col-md-4 text-center">First Pick</div>
+            <div class="col-md-4 text-center">Second Pick</div>
+          </div>
+
+          <div class="row border-thicc">
+            <div class="card col-md-4 text-center border-thicc">#{SF_1_Blue_1}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_1_Blue_2}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_1_Blue_3}</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card border-thicc">
+    <div class="card-body">
+      <h2 class="text-center">Semifinal 2</h2>
+      <div class="row">
+        <div class="card card-body col-md-5 border-thicc">
+          <div class="card row border-thicc">
+          	<div class="col-md-12 text-center">(Red) Alliance 2</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 text-center">Captain</div>
+            <div class="col-md-4 text-center">First Pick</div>
+            <div class="col-md-4 text-center">Second Pick</div>
+          </div>
+
+          <div class="row">
+            <div class="card col-md-4 text-center border-thicc">#{SF_2_Red_1}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_2_Red_2}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_2_Red_3}</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+          </div>
+        </div>
+
+    	<div class="card align-self-end col-md-2 border-thicc">
+          <div class="row align-self-center">
+          	Scores
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="card card-body col-md-5 border-thicc">
+          <div class="card row border-thicc">
+          	<div class="col-md-12 text-center">(Blue) Alliance 3</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 text-center">Captain</div>
+            <div class="col-md-4 text-center">First Pick</div>
+            <div class="col-md-4 text-center">Second Pick</div>
+          </div>
+
+          <div class="row">
+            <div class="card col-md-4 text-center border-thicc">#{SF_2_Blue_1}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_2_Blue_2}</div>
+            <div class="card col-md-4 text-center border-thicc">#{SF_2_Blue_3}</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card border-thicc">
+    <div class="card-body">
+      <h2 class="text-center">Final</h2>
+      <div class="row">
+        <div class="card card-body col-md-5 border-thicc">
+          <div class="card row border-thicc">
+          	<div class="col-md-12 text-center">Red Alliance</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 text-center">Captain</div>
+            <div class="col-md-4 text-center">First Pick</div>
+            <div class="col-md-4 text-center">Second Pick</div>
+          </div>
+
+          <div class="row">
+            <div class="card card-body col-md-4 text-center border-thicc"> </div>
+            <div class="card card-body col-md-4 text-center border-thicc"> </div>
+            <div class="card card-body col-md-4 text-center border-thicc"> </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+          </div>
+        </div>
+
+    	<div class="card align-self-end col-md-2 border-thicc">
+          <div class="row align-self-center">
+          	Scores
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 card card-body border-thicc">
+            </div>
+            <div class="col-6 card card-body border-thicc">
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="card card-body col-md-5 border-thicc">
+          <div class="card row border-thicc">
+          	<div class="col-md-12 text-center">Blue Alliance</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 text-center">Captain</div>
+            <div class="col-md-4 text-center">First Pick</div>
+            <div class="col-md-4 text-center">Second Pick</div>
+          </div>
+
+          <div class="row">
+            <div class="card card-body col-md-4 text-center border-thicc"> </div>
+            <div class="card card-body col-md-4 text-center border-thicc"> </div>
+            <div class="card card-body col-md-4 text-center border-thicc"> </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+            <div class="col-md-4 flex-column">
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+              <div class="row justify-content-center"><label><input type="checkbox" value=""></label></div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
