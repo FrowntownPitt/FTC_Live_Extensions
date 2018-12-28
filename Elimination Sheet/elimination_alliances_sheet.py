@@ -19,14 +19,16 @@ def format_elimination_bracket(json_data, input_file_name, output_file_name):
         bracket_sheet = bracket_sheet.replace("#{SF_"+str(sf)+"_Red_2}",
                                               str(alliances[d[sf]["red"]]['pick1']))
         bracket_sheet = bracket_sheet.replace("#{SF_"+str(sf)+"_Red_3}",
-                                              str(alliances[d[sf]["red"]]['pick2']))
+                                              str(alliances[d[sf]["red"]]['pick2'])
+                                              if alliances[d[sf]["red"]]['pick2'] > 0 else "")
 
         bracket_sheet = bracket_sheet.replace("#{SF_"+str(sf)+"_Blue_1}",
                                               str(alliances[d[sf]["blue"]]['captain']))
         bracket_sheet = bracket_sheet.replace("#{SF_"+str(sf)+"_Blue_2}",
                                               str(alliances[d[sf]["blue"]]['pick1']))
         bracket_sheet = bracket_sheet.replace("#{SF_"+str(sf)+"_Blue_3}",
-                                              str(alliances[d[sf]["blue"]]['pick2']))
+                                              str(alliances[d[sf]["blue"]]['pick2'])
+                                              if alliances[d[sf]["blue"]]['pick2'] > 0 else "")
 
     with open(output_file_name, "w") as file:
         file.write(bracket_sheet)
