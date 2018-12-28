@@ -1,14 +1,12 @@
 import requests
 import os
-
-template_name = "html/FIRST_elim_alliance_sheet.austl"
-output_name = "html/elim_alliance_sheet.html"
+from configparser import ConfigParser
 
 
-def format_elimination_bracket(json_data):
+def format_elimination_bracket(json_data, input_file_name, output_file_name):
     alliances = {d['seed']: d for d in json_data['alliances']}
 
-    with open(template_name, "r") as template_file:
+    with open(input_file_name, "r") as template_file:
         template = template_file.read()
 
     bracket_sheet = template
@@ -30,25 +28,28 @@ def format_elimination_bracket(json_data):
         bracket_sheet = bracket_sheet.replace("#{SF_"+str(sf)+"_Blue_3}",
                                               str(alliances[d[sf]["blue"]]['pick2']))
 
-    with open(output_name, "w") as file:
+    with open(output_file_name, "w") as file:
         file.write(bracket_sheet)
 
-    os.system("start " + output_name)
+    os.system("start " + output_file_name)
 
-
-server_ip = "127.0.0.1"
-event_code = "dummy"
-
-
-base_url = "http://" + server_ip + "/"
-base_path = "apiv1/events/" + event_code + "/"
-
-elimination_alliances_url = base_url + base_path + "elim/alliances/"
 
 if __name__ == "__main__":
+    config = ConfigParser()
+    config.read("Configuration.ini")
+
+    section = 'Elimination_Alliance_Sheet'
+
+    base_url = "http://" + config.get(section, 'server_ip') + "/"
+    base_path = "apiv1/events/" + config.get(section, 'event_code') + "/"
+
+    elimination_alliances_url = base_url + base_path + "elim/alliances/"
+
     response = requests.get(elimination_alliances_url)
     response.raise_for_status()
 
     result = response.json()
 
-    format_elimination_bracket(result)
+    format_elimination_bracket(result,
+                               config.get(section, 'elimination_template_file'),
+                               config.get(section, 'elimination_output_file'))
