@@ -1,4 +1,4 @@
-##Elimination Sheet
+## Elimination Sheet
 
 This extension will generate an elimination "bracket" webpage that can be printed directly.  It uses the [FTC Live Scoring API ](https://github.com/FIRST-Tech-Challenge/scorekeeper)
 to fetch the elimination alliances.
