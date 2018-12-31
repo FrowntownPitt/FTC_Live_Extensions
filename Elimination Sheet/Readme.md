@@ -18,7 +18,7 @@ scoring software.  The Final section allows you to write in the teams that advan
 
 Under each alliance there are checkboxes to mark which teams participated in which round.
 
-There is a box between the alliances to mark the results of each match.
+There is a box between the alliances to mark notes for each match, such as what time the match ended or who won each match.
 
 #### For the Future
 Currently if an event has only 2-team elimination alliances then the Second pick number slot will be blank.  I'd like to 
