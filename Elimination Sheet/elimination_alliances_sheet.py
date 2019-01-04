@@ -82,11 +82,19 @@ if __name__ == "__main__":
     alliances = {d['seed']: d for d in result['alliances']}
     elimination_sheet = format_elimination_bracket_teams(template, alliances)
 
-    alliance_information_url = base_url + base_path + "teams/"
-    response = requests.get(alliance_information_url)
-    result = response.json()
-    team_data = {seed['seed']: make_seed_dict(seed) for seed in alliances.values()}
-    elimination_sheet = format_team_data(elimination_sheet, team_data)
+    if config.getboolean(section, 'include_team_details'):
+        with open(config.get(section, 'details_template_file'), "r") as details_file:
+            details = details_file.read()
+
+        elimination_sheet = elimination_sheet.replace("#{team_details}", details)
+
+        alliance_information_url = base_url + base_path + "teams/"
+        response = requests.get(alliance_information_url)
+        result = response.json()
+        team_data = {seed['seed']: make_seed_dict(seed) for seed in alliances.values()}
+        elimination_sheet = format_team_data(elimination_sheet, team_data)
+    else:
+        elimination_sheet = elimination_sheet.replace("#{team_details}", "")
 
     with open(config.get(section, 'elimination_output_file'), "w") as file:
         file.write(elimination_sheet)
